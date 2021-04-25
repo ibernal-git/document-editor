@@ -1,0 +1,38 @@
+{
+  "name": "document-editor",
+  "version": "1.0.0",
+  "description": "Document Editor",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand --detectOpenHandles",
+    "test:watch": "npm run test -- --watch",
+    "start:test": "cross-env NODE_ENV=test node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibernal-git/document-editor.git"
+  },
+  "author": "Imanol Bernal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibernal-git/document-editor/issues"
+  },
+  "homepage": "https://github.com/ibernal-git/document-editor#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.7",
+    "standard": "^16.0.3"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.5",
+    "mongoose-unique-validator": "^2.0.3"
+  }
+}
